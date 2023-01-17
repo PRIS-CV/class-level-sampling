@@ -134,6 +134,10 @@ def train_main(args):
                 train_sampler = CategoriesSampler_2(trainset.label, len(trainset.data) // args.batch, args.num_task, args.way, args.shot + args.query, list_set,model,args)
                 train_loader = DataLoader(dataset=trainset, batch_sampler=train_sampler, num_workers=4, pin_memory=True)
             
+            elif args.train_sampling == "random_sampling":
+                trainset = Dataset('train', args)
+                train_sampler = CategoriesSampler(trainset.label, len(trainset.data) // args.batch, args.num_task, args.way, args.shot + args.query)
+                train_loader = DataLoader(dataset=trainset, batch_sampler=train_sampler, num_workers=4, pin_memory=True)
             
             else:
                 raise ValueError('Unknown train_sampling')
