@@ -39,3 +39,6 @@ For example, to test ReNet on the miniImagenet dataset in the 5-way 1-shot setti
 ```bash
 bash scripts/test/miniimagenet_5w1s.sh
 ```
+
+## :love_letter: Acknowledgement
+We adopted the main code bases from [RENet]([https://github.com/dahyun-kang/renet]), and we really appreciate it.
