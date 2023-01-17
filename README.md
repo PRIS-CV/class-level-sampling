@@ -9,6 +9,10 @@ Code release for the paper "Understanding Episode Hardness in Few-shot Learning"
 * [PyTorch 1.7.1](https://pytorch.org)
 
 
+## :Backbone Training for the ProtoNet
+We use the same backbone network and training strategies as 'RENet'. Please refer to https://github.com/dahyun-kang/renet for the backbone training.
+
+
 
 
 ## :fire: Training scripts
