@@ -11,17 +11,17 @@ In this paper, we propose a new metric named Inverse-Fisher Discriminant Ratio (
 * [PyTorch 1.7.1](https://pytorch.org)
 
 
-## :heavy_check_mark: Backbone Training for the ProtoNet
+## *  Backbone Training for the ProtoNet
 We use the same backbone network and training strategies as 'RENet'. Please refer to https://github.com/dahyun-kang/renet for the backbone training.
 
 
-## :heavy_check_mark: Training Pipeline
+## *  Training Pipeline
 The meta-learning model trained consists of two main training phases in order to achieve effective few-shot classifiers. The meta-learning model firstly is trained using randomly sampling episodes. Then we intentionally pick up hard episodes using cl-sampling or cpl-sampling for fine-tuning the model.
 
 
 
 
-## :fire: Training scripts
+## *  Training scripts
 To train in the 5-way K-shot setting:
 ```bash
 bash scripts/train/{dataset_name}_5wKs.sh
@@ -40,5 +40,11 @@ For example, to test ReNet on the miniImagenet dataset in the 5-way 1-shot setti
 bash scripts/test/miniimagenet_5w1s.sh
 ```
 
-## :love_letter: Acknowledgement
+## *  Acknowledgement
 We adopted the main code bases from [RENet]([https://github.com/dahyun-kang/renet]), and we really appreciate it.
+
+## * Contact
+Thanks for your attention! If you have any suggestion or question, you can leave a message here or contact us directly:
+
+* guoyurong@bupt.edu.cn
+* mazhanyu@bupt.edu.cn
