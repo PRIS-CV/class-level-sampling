@@ -19,8 +19,6 @@ We use the same backbone network and training strategies as 'RENet'. Please refe
 The meta-learning model trained consists of two main training phases in order to achieve effective few-shot classifiers. The meta-learning model firstly is trained using randomly sampling episodes. Then we intentionally pick up hard episodes using cl-sampling or cpl-sampling for fine-tuning the model.
 
 
-
-
 ## *  Training scripts
 To train in the 5-way K-shot setting:
 ```bash
@@ -39,6 +37,9 @@ For example, to test ReNet on the miniImagenet dataset in the 5-way 1-shot setti
 ```bash
 bash scripts/test/miniimagenet_5w1s.sh
 ```
+
+### Randomly-sampling training
+
 
 ## *  Acknowledgement
 We adopted the main code bases from [RENet]([https://github.com/dahyun-kang/renet]), and we really appreciate it.
