@@ -4,7 +4,7 @@ Code release for the paper "Understanding Episode Hardness in Few-shot Learning"
 
 In this paper, we propose a new metric named Inverse-Fisher Discriminant Ratio (IFDR) to assess episode hardness. And we propose a class-level hard episode sampling schemes (cl-sampling) that can be augmented to any existing few-shot learning approaches to boost their performance. Delving deeper, we also develop a novel variant of cl-sampling -- class-pair-level hard episode sampling scheme (cpl-sampling), which not only guarantees the generation of hard episode distribution like the class-level approach but also significantly reduces the time-cost.
 
-## :heavy_check_mark: Requirements
+* Requirements
 * Ubuntu 16.04
 * Python 3.7
 * [CUDA 11.0](https://developer.nvidia.com/cuda-toolkit)
