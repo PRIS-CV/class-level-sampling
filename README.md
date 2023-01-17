@@ -38,8 +38,15 @@ For example, to test ReNet on the miniImagenet dataset in the 5-way 1-shot setti
 bash scripts/test/miniimagenet_5w1s.sh
 ```
 
-### Randomly-sampling training
+### * Random-sampling training
+Edit scripts/train/{dataset_name}_5wKs.sh in the repository to change '-train_sampling' to random-sampling'.
+And then you can train the model using randomly sampling episodes by Training scripts.
 
+
+### * Fine-tuning 
+Load the pretrained model. 
+Edit scripts/train/{dataset_name}_5wKs.sh in the repository to change '-train_sampling' to cl-sampling/cpl-sampling'.
+And then you can train the model using cl-sampling or cpl-sampling by Training scripts.
 
 ## *  Acknowledgement
 We adopted the main code bases from [RENet]([https://github.com/dahyun-kang/renet]), and we really appreciate it.
