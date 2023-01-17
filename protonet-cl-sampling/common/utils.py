@@ -147,7 +147,7 @@ def parse_args(arg_mode):
     parser.add_argument('-milestones', nargs='+', type=int, default=[60, 70], help='milestones for MultiStepLR')
     parser.add_argument('-save_all', action='store_true', help='save models on each epoch')
     parser.add_argument('-train_sampling', type=str, default='cl_sampling',
-                        choices=['cl_sampling', 'cpl_sampling'])
+                        choices=['cl_sampling', 'cpl_sampling', 'random_sampling'])
 
     ''' about few-shot episodes '''
     parser.add_argument('-way', type=int, default=5, metavar='N', help='number of few-shot classes')
